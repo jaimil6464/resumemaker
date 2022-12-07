@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".secondactivity">
+
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Resume Is Done"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="100dp"
+        android:textStyle="bold|italic|normal"
+        />
+
+    <TextView
+        android:id="@+id/personaldetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Detail:-"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="15dp"
+
+        android:textSize="20dp"
+        android:layout_below="@+id/name"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+    android:id="@+id/fathername"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" Father Name:-"
+    android:textSize="15dp"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic|normal"
+        android:layout_below="@id/name"
+        android:layout_marginTop="45dp"
+    android:layout_marginLeft="33dp"/>
+<TextView
+    android:id="@+id/datebi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date Of Birth:-"
+    android:textSize="15dp"
+    android:textColor="@color/black"
+    android:layout_marginTop="5dp"
+    android:layout_below="@id/fathername"
+    android:textStyle="bold|italic|normal"
+    android:layout_marginLeft="33dp"/>
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:-"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/datebi"
+        android:layout_marginLeft="33dp"
+        android:textStyle="bold|italic|normal"/>
+    <TextView
+        android:id="@+id/nat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality:-"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="33dp"
+        android:textStyle="bold|italic|normal"/>
+
+
+    <TextView
+        android:id="@+id/marital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marital Status:-"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold|italic|normal"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@id/nat"/>
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language Knowns:-"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/marital"
+        android:layout_marginLeft="33dp"
+        android:textStyle="bold|italic|normal"/>
+
+
+    <TextView
+        android:id="@+id/hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies:-"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/language"
+        android:layout_marginLeft="33dp"
+        android:textStyle="bold|italic|normal"/>
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place:-"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/hobbies"
+        android:layout_marginLeft="33dp"
+        android:textStyle="bold|italic|normal"/>
+
+    <TextView
+        android:id="@+id/selfdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Self Detail:-"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="5dp"
+
+        android:textSize="20dp"
+        android:layout_below="@+id/place"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/selfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/selfdetail"
+
+        android:textColor="@color/black"
+        android:textStyle="italic|bold|normal"/>
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/selfname"
+
+        android:textColor="@color/black"
+        android:textStyle="italic|bold|normal"/>
+    <TextView
+        android:id="@+id/addres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/emailid"
+
+        android:textColor="@color/black"
+        android:textStyle="italic|bold|normal"/>
+    <TextView
+        android:id="@+id/careerobj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Career Objective:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/addres"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/prskill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Professional Skill:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/careerobj"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/workex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Work Experience:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/prskill"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/aq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Academic Qualification:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/workex"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

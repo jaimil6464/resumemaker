@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:coimntext=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always">
+
+
+
+    <TextView
+        android:id="@+id/biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESUME MAKER"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/personaldetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Detail:-"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="50dp"
+
+        android:textSize="20dp"
+        android:layout_below="@+id/biodata"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Father Name   :- "
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/personaldetail"
+
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Father Name"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/personaldetail"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/fullname"
+        />
+
+    <TextView
+        android:id="@+id/birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth  :- "
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/personaldetail"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birth Date"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/fullname"
+        android:inputType="date"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/birthdate"
+
+        android:layout_marginTop="5dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender  :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/birthdate"
+
+        android:layout_marginLeft="33dp"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Gender"
+    android:textSize="15dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/birthdate"
+    android:layout_toRightOf="@id/gender"
+    android:layout_marginTop="5dp"
+    android:inputType="text"
+    android:paddingLeft="5dp"
+    />
+
+
+    <TextView
+        android:id="@+id/placeofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality  :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/gender"
+        android:textColor="@color/black"
+        android:layout_marginLeft="33dp"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/hintbirthplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Nationality"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/gender"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/placeofbirth"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marital Status  :- "
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="33dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/placeofbirth"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/hintweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Marital Status"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/placeofbirth"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/weight"
+
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Languages Knowns  :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/weight"
+        android:layout_toLeftOf="@id/hintweight"
+        android:layout_marginLeft="33dp"
+
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Languages Knowns "
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/weight"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/height"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies  :- "
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/height"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Hobbies"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/height"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/education"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/education"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Place"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/education"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/education"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/selfdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Self Detail:-"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="5dp"
+
+        android:textSize="20dp"
+        android:layout_below="@+id/occupation"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/selfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/selfdetail"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/selfdetail"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/selfname"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/selfname"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/selfname"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/emailid"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/addres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :- "
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@+id/emailid"
+
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Address"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/emailid"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/addres"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+<TextView
+    android:id="@+id/careerobj"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Career Objective:-"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:layout_below="@id/occupation"
+    android:layout_marginLeft="33dp"
+    android:layout_marginTop="110dp"/>
+
+    <EditText
+        android:id="@+id/hintco"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Career Objective"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/careerobj"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="33dp"
+
+
+        />
+
+<TextView
+    android:id="@+id/prskill"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Professional Skill:-"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:layout_below="@id/hintco"
+    android:layout_marginLeft="33dp"
+    android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Professional Skill"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/prskill"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="33dp"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/workex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Work Experience:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/prskill"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Professional Skill"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/workex"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="33dp"
+
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/aq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Academic Qualification:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/workex"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Academic "
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/aq"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="33dp"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aq"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="29dp"
+        android:text="next"
+        android:textSize="12dp"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
